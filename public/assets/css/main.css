@@ -142,3 +142,131 @@
 	blockquote {
 	  margin: 15px 0; 
 	}
+	
+	.button{
+		display: inline-block;
+		padding: 8px 20px;
+		background-color: #666;
+		color: #ccc;
+		border:2px solid #ccc;
+		border-radius: 4px;
+		margin: 5px 0;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: bold;
+		transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		-ms-transition: all .3s linear;
+		-webkit-transition: all .3s linear;
+		-o-transition: all .3s linear;
+	}
+	
+	.button:hover {
+		color: #ccc;
+		opacity: .5;
+		text-decoration: none;
+	}
+	
+/* ---------------------- STRUCTURE ---------------------*/
+
+	.overlay {
+		background-color: rgba(0,0,0,.8);
+		padding: 25px;
+		position: absolute;
+		width: 100%;
+	}
+	
+	.overlay h3, .overlay p {
+		color: #ccc;
+		margin: 0px;
+	}
+	
+	.overlay-container {
+		position: relative;
+		height: 400px;
+		background-size: cover;
+		background-position: center center;
+		
+	}
+	
+	.overlay-container .overlay {
+		top:0;
+		bottom: 0;
+		height: 400px;
+		display: table;
+		padding: 100px;
+		opacity: 0;
+		transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		-ms-transition: all .3s linear;
+		-webkit-transition: all .3s linear;
+		-o-transition: all .3s linear;
+	}
+	
+	.overlay-container .overlay:hover{
+		opacity: 1;
+	}
+	
+	.vertical-align {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	@media(min-width:992px){
+		.one-half {
+			width: 50%;
+			float: left;
+		}
+	}
+	
+	#main-banner {
+		background-image: url('../images/mittens.jpg');
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+	}
+	
+	@media(max-width:767px){
+		#main-banner {
+			height: 300px;
+		}
+	}
+	
+	@media(min-width:768px){
+		#main-banner {
+			height: 400px;
+		}
+	}
+	
+	@media(min-width:992px){
+		#main-banner {
+			height: 500px;
+		}
+	}
+	
+	@media(min-width:1200px){
+		#main-banner {
+			height: 600px;
+		}
+	}
+	
+	#main-banner .overlay{
+		bottom: 0;
+	}
+	
+	#oliver {
+		background-image: url('../images/oliver.jpg');
+	}
+	
+	#peanut {
+		background-image: url('../images/peanut.jpg');
+	}
+	
+	footer {
+		background-color: #eee;
+		height: 200px;
+		margin-top: 50px;
+		box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	}
+	
+	
